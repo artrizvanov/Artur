@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+  <title>Yandex</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+          <div class="img-logo">
+            <a href="#"><img src="./img/logo.png" alt="" class="logotype"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <i class="fas fa-align-left"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-first ml-auto">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Наши проекты</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Услуги</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-last ml-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Екатеринбург</a>
+              </li>
+              <li class="nav-item2">
+                <button class="button-header">Обратный звонок</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+  <section class="section-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="auto-text">
+            <h1>Подключим к высокому<br />заработку, на личном авто,<br />за 30 минут</h1>
+            <button class="button-orange">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="auto">
+            <img src="./img/auto.png" class="img-auto" alt="">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="text-auto-1">
+                  <img src="./img/credit.png" alt="">
+                  <p class="block-text">Моментальные выплаты<br />на банковские карты</p>
+                  <div class="block1"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="text-auto-2">
+                  <img src="./img/discount.png" alt="">
+                  <p class="block-text">Большие скидки водителям<br />от наших партнеров</p>
+                  <div class="block2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="section-calculat">
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+<div id="calculator">
+
+<div class="col-md-2">
+  <div class="test">
+    <h4>Я заработаю</h4>
+    <p>asd</p>
+  </div>
+</div>
+
+<div class="col-md-4">
+<div class="time">
+   <p>
+
+  <input type="text" id="amount" readonly style="border:0; font-weight:bold;"><label for="amount"> часов</label>
+</p>
+
+<div id="slider-range-min"></div>
+
+</div>
+   </div>
+
+   <div class="col-md-4">
+   <div class="day">
+      <p>
+        <input type="text" id="amount2" readonly style="border:0; font-weight:bold;">
+  <label for="amount"> дней</label>
+</p>
+
+<div id="slider-range-min2"></div>
+
+   </div>
+   </div>
+   <div class="col-md-2">
+   <div class="clear">
+       <p id="revenue"><strong><span>12000 руб</span></strong><br />За неделю</p>
+
+
+   </div>
+   </div>
+   </div>
+   </div>
+  </div>
+</div>
+  </section> -->
+
+  <div class="container">
+    <div id="calculator">
+
+    <div class="test">
+      <p><span id="span1">Я заработаю</span><br />Из расчета 400 руб. в час<br />На основе данных о работе 5000 водителей<br />и их заработка 375 - 700 руб. в час </p>
+    </div>
+
+<div class="time">
+   <p>
+
+  <input type="text" id="amount" readonly style="border:0; font-weight:bold;"><label for="amount"> часов</label>
+  <span><br />в день</span>
+</p>
+
+<div id="slider-range-min"><span class="podpis1" id="span">1</span> <span class="podpis2" id="span">6</span> <span class="podpis3" id="span">12</span></div>
+
+</div>
+
+
+   <div class="day">
+      <p>
+        <input type="text" id="amount2" readonly style="border:0; font-weight:bold;">
+  <label for="amount"> дней</label>
+  <span><br />в неделю</span>
+</p>
+
+<div id="slider-range-min2"><span class="podpis4" id="span">0</span> <span class="podpis5" id="span">7</span></div>
+
+   </div>
+
+     <div class="week">
+       <p id="revenue"><strong><span>12000 руб.</span><br />За неделю</strong></p>
+
+    </div>
+  </div>
+  </div>
+
+  <section class="section-work">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="h1-work centered">
+            <h1>Как мы работаем</h1>
+          </div>
+        </div>
+        <div class="col-md-4 offset-1">
+          <div class="block-work">
+            <img src="./img/1.svg" alt="">
+            <p>Оформление заявки на подключение</p>
+            <span class="span-work">5 минут</span>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="number-work centered">
+            <p>1</p>
+            <hr />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-work text-left justify-content-start">
+            <p class="p-m">Заполните заявку на сайте, указав контактные данные.<br />Мы свяжемся с вами и направим анкету, где<br />необходимо указать информацию об автомобиле</p>
+          </div>
+        </div>
+        <div class="col-md-4 offset-1">
+          <div class="text-work text-right justify-content-end">
+            <p class="p-m">После получения заполненной анкеты, мы начнем<br />подключать вас к сервису Яндекс.Такси и<br />моментальным выплатам</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="number-work centered h-145px">
+            <p>2</p>
+            <hr />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block-work">
+            <img src="./img/2.svg" alt="">
+            <p>Оформление заявки на подключение</p>
+            <span class="span-work">5 минут</span>
+          </div>
+        </div>
+        <div class="col-md-4 offset-1">
+          <div class="block-work">
+            <img src="./img/3.svg" alt="">
+            <p>Оформление заявки на подключение</p>
+            <span class="span-work">5 минут</span>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="number-work centered h-145px">
+            <p>3</p>
+            <hr />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-work text-left justify-content-start">
+            <p class="p-m">Как подключим вас ко всем системам, необходимо<br />загрузить приложение Таксометр на смартфон и<br />приложение для моментальных выплат</p>
+          </div>
+        </div>
+        <div class="col-md-4 offset-1">
+          <div class="text-work text-right justify-content-end">
+            <p class="p-m">Смартфон подготовлен для приема заказов и выплат,<br />теперь самое время выйти на линию и начать<br />зарабатывать</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="number-work centered h-145px">
+            <p>4</p>
+            <hr />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block-work">
+            <img src="./img/4.svg" alt="">
+            <p>Оформление заявки на подключение</p>
+            <span class="span-work">5 минут</span>
+          </div>
+        </div>
+        <div class="col-md-4 offset-1">
+          <div class="block-work d-flex justify-content-center align-items-center">
+            <p class="last-text">Оформление заявки на подключение</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="number-work centered h-145px">
+            <p>5</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-work text-left justify-content-start mb-5">
+            <p class="p-m mb-1">Получайте деньги в любой момент, когда<br />вам потребуется. Выполните вход<br />в приложение и получите сумму на вашу банковскую карту</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="img-mobile">
+            <img src="./img/mobile.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-7 offset-1">
+          <div class="text-mobile">
+            <h1>Моментальные выплаты</h1>
+            <p class="p-mob">Выполняя заказы с ONMOVE, вы получаете оплату<br />в любой момент без посещений и звонков в автопарк,<br />на любую банковскую карту.</p>
+            <hr class="hr1"/>
+            <p class="p-mob">Минимальная сумма вывода - 500 рублей. Выплаты<br />происходят с использованием информационных<br />технологий, без человеческого труда. Таким образом,<br />задержка или ошибка невозможна.</p>
+            <hr class="hr2"/>
+            <p class="p-mob">В личном кабинете выбираете сумму перевода - денежные<br />средства поступают на вашу банковскую карту. Комиссия<br />составляет - 100 рублей в месяц.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tarif">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 centered">
+          <div class="h1-tarif">
+              <h1>Выберите тариф</h1>
+          </div>
+        </div>
+        <div class="col-md-4 text-center blocks">
+          <div class="block-tarif">
+            <p class="p-t bold">комиссия таксопарка</p>
+            <h1>3%</h1>
+            <li class="tarif-item"><a class="p-t" href="#">Моментальные выплаты</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Бесплатные выводы в неделю - 1</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Комиссия за вывод средств - 3%</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Топливные системы</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Техподдержка - 24/7</a></li>
+            <button class="button-orange">Выбрать тариф</button>
+          </div>
+        </div>
+        <div class="col-md-4 text-center blocks">
+          <div class="block-tarif">
+            <p class="p-t bold">комиссия таксопарка</p>
+            <h1>5%</h1>
+            <li class="tarif-item"><a class="p-t" href="#">Моментальные выплаты</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Бесплатные выводы в неделю - 1</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Комиссия за вывод средств - 3%</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Топливные системы</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Техподдержка - 24/7</a></li>
+            <button class="button-orange">Выбрать тариф</button>
+          </div>
+        </div>
+        <div class="col-md-4 text-center blocks">
+          <div class="block-tarif">
+            <p class="p-t bold">комиссия таксопарка</p>
+            <h1>4%</h1>
+            <li class="tarif-item"><a class="p-t" href="#">Моментальные выплаты</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Бесплатные выводы в неделю - 1</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Комиссия за вывод средств - 3%</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Топливные системы</a></li>
+            <li class="tarif-item"><a class="p-t" href="#">Техподдержка - 24/7</a></li>
+            <button class="button-orange">Выбрать тариф</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-mers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 centered">
+          <div class="img-mers">
+            <img src="./img/mers.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-7 text-center centered">
+          <div class="text-mers">
+            <h2>Подключитесь сейчас и начните <br />зарабатывать уже через 30 минут </h2>
+            <p class="p-t">Специалист свяжется с вами в течении 10 минут<br />и  проконсультирует по вопросам подключения</p>
+            <button class="button-orange">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-new">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 centered mb-5">
+          <div class="h1-new">
+            <h1>Новости и статьи</h1>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block-new">
+            <img src="./img/1q.png" alt="">
+            <p class="p-m">10/11</p>
+            <a href="#" class="a-n">Топ 5 лучших смартофон для<br />использования в такси</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block-new">
+            <img src="./img/2q.png" alt="">
+            <p class="p-m">05/10</p>
+            <a href="#" class="a-n">Чем занять себя во время<br />большой пробки</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block-new">
+            <img src="./img/3q.png" alt="">
+            <p class="p-m">29/09</p>
+            <a href="#" class="a-n">Почему не стоит отказываться<br />от заказов Uber</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block-new">
+            <img src="./img/4q.png" alt="">
+            <p class="p-m">15/09</p>
+            <a href="#" class="a-n">Лучшее время для<br />выполнения заказов</a>
+          </div>
+        </div>
+        <div class="col-lg-12 centered">
+          <div class="archive">
+            <a href="#">Архив новостей</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 centered">
+          <div class="h1-menu">
+            <h1>Частые вопросы</h1>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+  <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Что такое бонусы?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Можно ли выбрать условия работы?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Почему ваша комиссия выше чем у других парков?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Как долго мне ждать подключения?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingFive">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Почему опция “Домой” недоступна?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+  </div>
+  <!-- end of #accordion -->
+
+</div>
+<!-- end of wrap -->
+        <div class="col-md-6 col-sm-6">
+  <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingSix">
+        <h4 class="panel-title">
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+        У вас возможна аренда автомобиля?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingSeven">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Как распределяются заказы?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingEight">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        Какой телефон необходим для работы?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingNine">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+        Почему заказы приходят при скорости до 80 км/ч?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingTen">
+        <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+        Учитываются ли пробки в заказах?
+      </a>
+    </h4>
+      </div>
+      <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+        <div class="panel-body">
+          <hr />
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <!-- end of panel -->
+
+  </div>
+  <!-- end of #accordion -->
+
+</div>
+<!-- end of wrap -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section-footer" id="footer1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 align-items-center justify-content-start">
+          <div class="img-logo">
+            <a href="#"><img src="./img/logo.png" alt="" class="logotype"></a>
+          </div>
+        </div>
+        <div class="col-md-3 centered">
+          <div class="text-footer1">
+            <p>ИП Иванов Иван Иванович</p></a>
+            <p>Все права защищены</p>
+          </div>
+        </div>
+        <div class="col-md-4 centered">
+          <div class="text-footer2">
+            <p><a href="#">Публичный агентский договор</a><br /></p>
+            <p><a href="#">Политика конфиденциальности</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex align-items-center justify-content-end">
+          <div class="icon-footer">
+            <a href="#"><img src="./img/viber.png" alt=""></a>
+            <a href="#"><img src="./img/whatsapp.png" alt=""></a>
+            <a href="#"><img src="./img/telegram.png" alt=""></a>
+            <a href="#"><img src="./img/vk.png" alt=""></a>
+            <a href="#"><img src="./img/instagram.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-footer" id="footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 centered">
+          <div class="text-footer1">
+            <p>ИП Иванов Иван Иванович</p></a>
+            <p>Все права защищены</p>
+          </div>
+        </div>
+        <div class="col-md-4 centered">
+          <div class="text-footer2">
+            <p><a href="#">Публичный агентский договор</a><br /></p>
+            <p><a href="#">Политика конфиденциальности</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-end">
+          <div class="icon-footer">
+            <a href="#"><img src="./img/viber.png" alt=""></a>
+            <a href="#"><img src="./img/whatsapp.png" alt=""></a>
+            <a href="#"><img src="./img/telegram.png" alt=""></a>
+            <a href="#"><img src="./img/vk.png" alt=""></a>
+            <a href="#"><img src="./img/instagram.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./ui/jquery-ui.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./fontawesome/js/all.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
